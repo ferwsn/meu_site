@@ -1,0 +1,138 @@
+* {
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+h1, h2, nav {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6ff;
+}
+
+header{
+    background-color: #000286;
+    padding: 10px;    
+    width: 100%;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    text-align: center;
+    color: white;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+h1{
+    font-size: 46px;
+    margin: 10px 0;
+}
+
+nav{
+    font-size: 18px;
+    word-spacing: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+a:visited{
+    color: white;
+}
+
+a:hover{
+    color:#6582e2
+}
+
+main{
+    margin-top: 150px;
+    padding: 0 20px 120px 20px;
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: justify;
+}
+
+footer {
+    background-color: #000286;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    color: white;
+    border: 1px solid black;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+label{
+    font-weight: bold;
+    margin-top: 10px;
+    align-self: center;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin: 5px 0 5px 0;
+    border: 1px solid #000286;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.05);
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button{
+    background-color: #000286;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: #6582e2;
+}
+
+@media (max-width: 768px) {
+    nav {
+        word-spacing: 8px;
+        font-size: 16px;
+    }
+
+    main {
+        margin-top: 130px;
+        padding: 0 15px 120px 15px;
+    }
+
+    form {
+        margin: 0 10px;
+        padding: 15px;
+    }
+}
